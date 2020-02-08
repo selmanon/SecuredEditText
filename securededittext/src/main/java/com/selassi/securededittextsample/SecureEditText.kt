@@ -1,10 +1,10 @@
-package com.selassi.securededittext
+package com.selassi.securededittextsample
 
 import android.content.Context
+import android.util.AttributeSet
 import android.widget.EditText
 
-class SecureEditText(context: Context?) : EditText(context) {
-
+class SecureEditText(context: Context, attrs : AttributeSet) : EditText(context, attrs) {
     private var mSecureString : SecureString = SecureString("".toCharArray());
 
     fun getSecureText(): SecureString {
@@ -13,7 +13,6 @@ class SecureEditText(context: Context?) : EditText(context) {
 
     fun setSecureText(secureString: SecureString) {
         mSecureString = secureString
-        invalidate()
-        requestLayout()
+        super.setText(secureString)
     }
 }

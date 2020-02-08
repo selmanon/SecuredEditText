@@ -1,4 +1,4 @@
-package com.selassi.securededittext
+package com.selassi.securededittextsample
 
 import org.junit.Test
 
