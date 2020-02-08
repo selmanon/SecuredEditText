@@ -1,0 +1,2 @@
+include ':app', ':securededittext'
+rootProject.name='Secured EditText'
