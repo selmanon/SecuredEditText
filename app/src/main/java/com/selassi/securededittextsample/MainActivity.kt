@@ -2,7 +2,8 @@ package com.selassi.securededittextsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
+import com.selassi.securededittext.SecureEditText
+import com.selassi.securededittext.SecureString
 
 class MainActivity : AppCompatActivity() {
 

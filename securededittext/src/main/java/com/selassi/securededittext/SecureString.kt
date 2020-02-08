@@ -1,4 +1,4 @@
-package com.selassi.securededittextsample
+package com.selassi.securededittext
 
 import java.util.*
 
