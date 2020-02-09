@@ -4,16 +4,16 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.EditText
 
-class SecureEditText(context: Context, attrs : AttributeSet) : EditText(context, attrs) {
-    private var mSecureString : SecureString =
-        SecureString("".toCharArray());
+class SecureEditText(context: Context, attrs: AttributeSet) : EditText(context, attrs) {
+    private var mSecureString: SecureString =
+        SecureString(CharArray(0));
 
-    fun getSecureText(): SecureString {
-        return mSecureString;
+    fun setSecuredText(secureString: SecureString) {
+        mSecureString = secureString
+        super.setText(text)
     }
 
-    fun setSecureText(secureString: SecureString) {
-        mSecureString = secureString
-        super.setText(secureString)
+    fun getSecuredText(): SecureString {
+        return mSecureString;
     }
 }

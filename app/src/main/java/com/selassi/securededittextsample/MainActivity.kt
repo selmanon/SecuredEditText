@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val securedEditText = findViewById<SecureEditText>(R.id.password)
-        securedEditText.setSecureText(SecureString("Secured Password!".toCharArray()))
-        System.out.println(securedEditText.getSecureText())
+        securedEditText.setSecuredText(SecureString("Secured Password!".toCharArray()))
+        System.out.println("from main : ${securedEditText.getSecuredText()}")
 
     }
 }
